@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #EEE;
+}
+
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #1a4b84;
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Itim', cursive;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.navbar-links {
+    float: right;
+}
+
+.navbar-links a {
+    color: rgba(255, 255, 255, 0.568);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.selected {
+    color: white !important;
+    font-weight: 600;
+}
+
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url('https://content.r9cdn.net/rimg/dimg/d8/fe/f9340c51-city-27416-16751849f12.jpg?crop=true&width=1366&height=768&xhint=2128&yhint=1398');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(6, 3, 2, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.nightlife-section {
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.nightlife-location {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nightlife-image {
+    flex: 1;
+    overflow: hidden;
+    height: 20rem;
+    position: relative;
+}
+
+.nightlife-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nightlife-info {
+    flex: 1;
+}
+
+.nightlife-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nightlife-info p {
+    margin-bottom: 1.5rem;
+}
