@@ -13,6 +13,7 @@ body {
 .inner {
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
 }
 
 .navbar {
@@ -97,9 +98,6 @@ body {
     font-weight: normal;
 }
 
-.inner {
-   
-}
 
 
 .restaurant-section {
@@ -138,14 +136,75 @@ body {
 
 .book-button {
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #E15B5B;
+    background-color: #e15b5b;
     color: white;
+    padding: 1rem 4rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
 }
 
 .book-button:hover {
     background-color: #bb3f3f;
+}
+
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+@media (max-width: 768px) {
+    .hotel-section {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        background-color: #265a95;
+        width: 90vw;
+        max-width: 20rem;
+        z-index: 100;
+        right: 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-brand {
+        display: block;
+    }
 }

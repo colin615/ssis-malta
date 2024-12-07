@@ -14,10 +14,11 @@
     <nav class="navbar">
         <div class="inner">
             <a href="#" class="navbar-brand">Visit Valletta</a>
+            <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
             <div class="navbar-links">
                 <a href="../index.html">BOENDE</a>
                 <a href="../resturanger/index.html">RESTURANGER</a>
-                <a href="../sevardigheter/index.html" class="selected">SEVÄRDHETER</a>
+                <a href="#" class="selected">SEVÄRDHETER</a>
                 <a href="../nattliv/index.html">NATTLIV</a>
             </div>
         </div>
@@ -88,9 +89,12 @@
 
 
 
+        <script>
+            document.querySelector('.navbar-toggle').addEventListener('click', function () {
+                const links = document.querySelector('.navbar-links');
+                links.classList.toggle('active');
+            });
+        </script>
     </body>
-</body>
-
-</html>
 
 </html>

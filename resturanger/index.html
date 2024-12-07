@@ -14,6 +14,7 @@
     <nav class="navbar">
         <div class="inner">
             <a href="#" class="navbar-brand">Visit Valletta</a>
+            <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
             <div class="navbar-links">
                 <a href="../index.html">BOENDE</a>
                 <a href="#" class="selected">RESTURANGER</a>
@@ -32,7 +33,7 @@
 
     <section class="restaurant-section inner">
         <div class="restaurant-image">
-            <img alt="Bild på restaurang 1" src="../assets/sotto.png">
+            <img alt="Bild av en stenugnsbakad pizza framför en skylt som lyder 'Sotto Pinsa Romana'." src="../assets/sotto.png">
         </div>
         <div class="restaurant-info">
             <h2>Sotto Pinsa Romana Valletta</h2>
@@ -52,7 +53,7 @@
 
     <section class="restaurant-section inner">
         <div class="restaurant-image">
-            <img alt="Bild på restaurang 2" src="../assets/noni.png">
+            <img alt="Bild av interiören av en skylt med par bord och ett sten golv." src="../assets/noni.png">
         </div>
         <div class="restaurant-info">
             <h2>Noni</h2>
@@ -74,7 +75,7 @@
 
     <section class="restaurant-section inner">
         <div class="restaurant-image">
-            <img alt="Bild på restaurang 3" src="../assets/ion.png">
+            <img alt="Bild på ett lyxigt matbord på terassen med en utsikt över ön Malta." src="../assets/ion.png">
         </div>
         <div class="restaurant-info">
             <h2>ION Harbour</h2>
@@ -83,12 +84,23 @@
                 <p>>1000kr</p>
             </div>
 
-            <p>ION Harbour erbjuder en exklusiv matupplevelse med panoramautsikt över Grand Harbour. Restaurangen har en Michelin-stjärna och är känd för sin innovativa meny som kombinerar medelhavssmaker med moderna tekniker. Gäster kan njuta av en avsmakningsmeny som speglar säsongens bästa råvaror, ackompanjerad av en omfattande vinlista. Den sofistikerade atmosfären och den exceptionella servicen gör ION Harbour till ett utmärkt val för speciella tillfällen.            </p>
+            <p>ION Harbour erbjuder en exklusiv matupplevelse med panoramautsikt över Grand Harbour. Restaurangen har en
+                Michelin-stjärna och är känd för sin innovativa meny som kombinerar medelhavssmaker med moderna
+                tekniker. Gäster kan njuta av en avsmakningsmeny som speglar säsongens bästa råvaror, ackompanjerad av
+                en omfattande vinlista. Den sofistikerade atmosfären och den exceptionella servicen gör ION Harbour till
+                ett utmärkt val för speciella tillfällen. </p>
             <a href="#" class="book-button">Boka</a>
         </div>
     </section>
+
+
+    <script>
+        document.querySelector('.navbar-toggle').addEventListener('click', function () {
+            const links = document.querySelector('.navbar-links');
+            links.classList.toggle('active');
+        });
+    </script>
 </body>
 
-</html>
 
 </html>

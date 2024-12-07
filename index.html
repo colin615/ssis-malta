@@ -11,70 +11,85 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="inner">
-            <a href="#" class="navbar-brand">Visit Valletta</a>
-            <div class="navbar-links">
-                <a href="#" class="selected">BOENDE</a>
-                <a href="resturanger/index.html">RESTURANGER</a>
-                <a href="sevardigheter/index.html">SEVÄRDHETER</a>
-                <a href="nattliv/index.html">NATTLIV</a>
+    <header>
+        <nav class="navbar">
+            <div class="inner">
+                <a href="#" class="navbar-brand">Visit Valletta</a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
+                <div class="navbar-links">
+                    <a href="#" class="selected">BOENDE</a>
+                    <a href="resturanger/index.html">RESTURANGER</a>
+                    <a href="sevardigheter/index.html">SEVÄRDHETER</a>
+                    <a href="nattliv/index.html">NATTLIV</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Valletta</h1>
+                <h2>Boende</h2>
             </div>
         </div>
-    </nav>
 
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Valletta</h1>
-            <h2>Boende</h2>
-        </div>
-    </div>
+        <section class="hotel-section inner">
+            <article class="hotel-info">
+                <div class="hotel-image">
+                    <img alt="Bild på hotellet Phoenicia Malta, en stor vit byggnad med mycket träd och buskage."
+                        src="assets/phoenicia.png">
+                </div>
+                <h2>The Phoenicia Malta</h2>
+                <div class="tags">
+                    <p>Lyxigt</p>
+                    <p>Utsikt</p>
+                    <p>Historiskt</p>
+                    <p>Infinity Pool</p>
+                </div>
+                <p style="margin-bottom: 0.225rem; margin-top: -0.75rem;">Pris Nivå : <span
+                        style="color:rgb(255, 78, 78); font-weight: 700;">Hög</span></p>
+                <p>Detta ikoniska hotell har en perfekt placering nära stadens historiska portar och erbjuder elegans,
+                    service i världsklass och fantastisk utsikt över Valletta. Med vacker art déco-design, en fantastisk
+                    infinitypool med utsikt över hamnen och en stor trädgård, är detta ett av de mest exklusiva hotellen
+                    i
+                    Malta.</p>
+                <a href="#" class="book-button">Boka</a>
+            </article>
+        </section>
 
-    <section class="hotel-section inner">
-        <div class="hotel-image">
-            <img alt="Bild på hotellet Phoenicia Malta, en stor vit byggnad med mycket träd och buskage."
-                src="assets/phoenicia.png"">
-        </div>
-        <div class=" hotel-info">
-            <h2>The Phoenicia Malta</h2>
-            <div class="tags">
-                <p>Lyxigt</p>
-                <p>Utsikt</p>
-                <p>Historiskt</p>
-                <p>Infinity Pool</p>
-            </div>
-            <p style="margin-bottom: 0.225rem; margin-top: -0.75rem;">Pris Nivå : <span
-                    style="color:rgb(255, 78, 78); font-weight: 700;">Hög</span></p>
-            <p>Detta ikoniska hotell har en perfekt placering nära stadens historiska portar och erbjuder elegans,
-                service i världsklass och fantastisk utsikt över Valletta. Med vacker art déco-design, en fantastisk
-                infinitypool med utsikt över hamnen och en stor trädgård, är detta ett av de mest exklusiva hotellen i
-                Malta.</p>
-            <a href="#" class="book-button">Boka</a>
-        </div>
-    </section>
+        <section class="hotel-section inner">
+            <article class="hotel-info">
+                <div class="hotel-image">
+                    <img alt="Ett lyxigt hotellrum med en väggmålning av änglar, en röd sammetsfåtölj och en säng med grå och gröna kuddar."
+                        src="assets/coleridge.png">
+                </div>
+                <h2>The Coleridge Boutique Hotel</h2>
+                <div class="tags">
+                    <p>Boutique Hotell</p>
+                    <p>Romantiskt</p>
+                    <p>Historiskt</p>
+                </div>
+                <p style="margin-bottom: 0.225rem; margin-top: -0.75rem;">Pris Nivå : <span
+                        style="color:rgb(16, 146, 29); font-weight: 700;">Fynd</span></p>
+                <p>
+                    Ett riktigt fynd för den som söker en prisvärd men ändå elegant upplevelse. Detta lilla
+                    boutiquehotell
+                    kombinerar historisk charm med modern stil och komfort, och erbjuder en upplevelse som är värd mer
+                    än
+                    vad prislappen antyder. Perfekt för en romantisk vistelse utan att spräcka budgeten.
+                </p>
+                <a href="#" class="book-button">Boka</a>
+            </article>
+        </section>
+    </main>
 
-    <section class="hotel-section inner">
-        <div class="hotel-image">
-            <img alt="Bild på ett rum inne i hotellet Coleridge"
-                src="assets/coleridge.png">
-        </div>
-        <div class="hotel-info">
-            <h2>The Coleridge Boutique Hotel</h2>
-            <div class="tags">
-                <p>Boutique Hotell</p>
-                <p>Romantiskt</p>
-                <p>Historiskt</p>
-            </div>
-            <p style="margin-bottom: 0.225rem; margin-top: -0.75rem;">Pris Nivå : <span
-                    style="color:rgb(16, 146, 29); font-weight: 700;">Fynd</span></p>
-            <p>
-                Ett riktigt fynd för den som söker en prisvärd men ändå elegant upplevelse. Detta lilla boutiquehotell
-                kombinerar historisk charm med modern stil och komfort, och erbjuder en upplevelse som är värd mer än
-                vad prislappen antyder. Perfekt för en romantisk vistelse utan att spräcka budgeten.
-            </p>
-            <a href="#" class="book-button">Boka</a>
-        </div>
-    </section>
+    <script>
+        document.querySelector('.navbar-toggle').addEventListener('click', function () {
+            const links = document.querySelector('.navbar-links');
+            links.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
